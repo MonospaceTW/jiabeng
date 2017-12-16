@@ -1,0 +1,19 @@
+@import url(_global.css);
+@import url(_layout.css);
+
+.header{
+    border: 1px solid #111;
+}
+.header i{
+    font-size: 24px;
+}
+.resturant-pic{
+    border:1px solid #ffffff;
+    width:80%;
+    padding:2px;
+    margin:0 auto;
+}
+.container img{
+    width:100%;
+    height:auto;
+}
