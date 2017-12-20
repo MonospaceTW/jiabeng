@@ -13,7 +13,7 @@
         <!-- header start -->
         <div class="header">
             <div class="d-flex justify-content-around">  <!-- flexbox to make logo, site-title and search at the right position -->
-                <a href="index.html"><img class="logo" src="images/favicon_64x64.png" alt="Monospace"></a>  <!-- logo -->
+                <a href="index.html"><img class="logo" src="images/favicon_64x64.svg" alt="Monospace"></a>  <!-- logo -->
                 <h1 class="site-title text-center"><a href="#">"Resturant"</a></h1>  <!-- site-title -->
                 <!-- <input class="search" type="search" placeholder="search..."> -->  <!-- 自己寫的 -->
                 <!-- search input （BS) -->
@@ -35,90 +35,93 @@
             <button class="share-button float-right clearfix" type="submit">Share</button><!-- share the url -->
              <!-- input the order person -->
             <div class="input-group input-group-sm col-sm-4 col-sm-offset-4">
-                <span class="input-group-addon" id="order_person">訂購人</span>
+                <span class="input-group-addon">訂購人</span>  
                 <input type="text" class="form-control " placeholder="ex:Jason" aria-label="Username" aria-describedby="basic-addon1">
             </div>
-                      
-            <span class="text-danger">別忘了留下你的大名喔！</span>
-            <div class="row">
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                        </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
-                    </div>
+            <span class="notice text-danger">別忘了留下你的大名喔！</span>
+            <div class="row"> <!-- choose the meals and amounts -->
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>
+                <div class="input-group col-xs-12 col-sm-4">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </span>
+                    <span class="input-group-addon">數量</span>
+                    <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                </div>        
             </div>
+            <button class="confirm-button float-right clearfix" type="submit">送出</button>
+        </div>
+        <div class="container">
+
         </div>
         <!-- container end -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
