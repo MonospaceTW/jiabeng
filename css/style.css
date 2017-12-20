@@ -4,7 +4,6 @@
 .header{
     border: 1px solid #111;
     padding-top: 5px;
-    background-color: red;
 }
 .header i{
     font-size: 1.5rem;
@@ -22,4 +21,14 @@
     width:100%;
     height:auto;
     margin:4px auto;
+}
+.container meal{
+    margin:4px auto;
+}
+
+.result-meal{
+    color:blue;
+}
+.result-amount{
+    color: red;
 }
