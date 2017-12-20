@@ -14,8 +14,27 @@
         <div class="d-flex justify-content-around">  <!-- bootstrap's flexbox -->
             <a href="index.html"><img class="logo" src="images/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
             <h1 class="site-title text-center"><a href="#">Jiabeng</a></h1>  <!-- website's title, using h1 tag for SEO -->
-            <!-- <input class="search" type="search" placeholder="search..."> -->  <!-- 自己寫的 -->
-                <!-- search input （BS) -->
+            <div class="pos-f-t d-block d-lg-none"> <!-- <992px hamburger menu show up  -->
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <div class="row">
+                            <div class="input-group"> <!-- search input in the hamburger menu（use BS4) -->
+                                <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary" type="button">Search</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </nav>
+            </div>
+            
+            <!-- >=992px, search input（use BS4) show up -->
                 <div class="row d-none d-lg-block">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">

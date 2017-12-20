@@ -39,13 +39,12 @@
             <span class="notice text-danger">別忘了留下你的大名喔！</span>
             <button class="share-button float-right clearfix" type="submit">Share</button><!-- share the url -->
              <!-- input the order person -->
-            
             <div class="row mt-3"> <!-- choose the meals and amounts -->
                     <div class="input-group col-sm-12 col-md-6 col-lg-4">
-                        <span class="input-group-addon">
+                        <span class="input-group-addon">  <!-- checkbox -->
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">讀取便當名</span>
+                        <span class="input-group-addon">讀取便當名</span>  <!-- output the meals'name -->
                         <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
                     <div class="input-group col-sm-12 col-md-6 col-lg-4">
@@ -119,28 +118,27 @@
                         <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
             </div>
-            <button class="confirm-button float-right clearfix" type="submit">送出</button>
+            <button class="confirm-button float-right clearfix" type="submit">送出</button>  <!-- button,submit the order -->
             <ul class="mt-4">
-                <span class="text-danger">以下為成功訂購的訂單，如果尚未提供刪除功能，如需更改請找主揪</span>
-                <li class="result-orders mt-3">
-                    <span class="text-success result-person">"輸出訂購人"</span>
+                <span class="text-danger">以下為成功訂購的訂單，如果尚未提供刪除功能，如需更改請找主揪</span> <!-- Notice that we can't delete the order right now -->
+                <li class="result-orders mt-4">
+                    <span class="text-success result-person">"輸出訂購人"</span>  <!-- output the order person -->
                     <span>已經訂購了</span>
-                    <span class="text-primary result-meal">"輸出便當名"</span>
+                    <span class="text-primary result-meal">"輸出便當名"</span>  <!-- output the meal's name -->
                     <span>*</span>
-                    <span class="text-danger result-amount">"輸出數量"</span>
+                    <span class="text-danger result-amount">"輸出數量"</span>  <!-- output the amount of the meal -->
                     <span>份</span>
                 </li>
             </ul>
             <hr>
             <ul class="mt-4">
                 <li class="total-order">
-                    <span class="text-primary result-meal">"輸出便當名"</span>
+                    <span class="text-primary result-meal">"輸出便當名"</span>  <!-- output the meal's name -->
                     <span>一共訂了</span>
-                    <span class="text-danger result-amount">"輸出總數量"</span>
+                    <span class="text-danger result-amount">"輸出總數量"</span>  <!-- output the total amount of the meals -->
                     <span>份</span>
                 </li>
             </ul>
-
         </div>
         <!-- container end -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
