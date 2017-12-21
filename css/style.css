@@ -3,9 +3,10 @@
 
 .header{
     border: 1px solid #111;
+    padding-top: 5px;
 }
 .header i{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .resturant-pic{
     border:1px solid #ffffff;
@@ -13,10 +14,14 @@
     padding:2px;
     margin:0 auto;
 }
+.container{
+    margin:1rem auto;
+}
 .container img{
     width:100%;
     height:auto;
+    margin:4px auto;
 }
-.orders{
-    margin-top:30px;
+.container meal{
+    margin:4px auto;
 }

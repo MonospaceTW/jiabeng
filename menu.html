@@ -10,115 +10,135 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-        <!-- header start -->
-        <div class="header">
-            <div class="d-flex justify-content-around">  <!-- flexbox to make logo, site-title and search at the right position -->
-                <a href="index.html"><img class="logo" src="images/favicon_64x64.png" alt="Monospace"></a>  <!-- logo -->
-                <h1 class="site-title text-center"><a href="#">"Resturant"</a></h1>  <!-- site-title -->
-                <!-- <input class="search" type="search" placeholder="search..."> -->  <!-- 自己寫的 -->
+    <!-- header start-->
+    <div class="header">  
+        <div class="d-flex justify-content-around">  <!-- bootstrap's flexbox -->
+            <a href="index.html"><img class="logo" src="images/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
+            <h1 class="site-title text-center"><a href="#">McDonald</a></h1>  <!-- website's title, using h1 tag for SEO -->
+            <!-- <input class="search" type="search" placeholder="search..."> -->  <!-- 自己寫的 -->
                 <!-- search input （BS) -->
-                <div class="row">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="button">Search</button>
-                            </span>
-                        </div>
+                <div class="row d-none d-lg-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Search</button>
+                        </span>
+                    </div>
                 </div>
-                <!-- <i class="fa fa-search search-icon" aria-hidden="true"></i> -->
-            </div>
+            <!-- <i class="fa fa-search search-icon" aria-hidden="true"></i> --> <!-- magnifier for search, using the font aswsome -->
         </div>
-        <!-- header end -->
+    </div>
+    <!-- header end-->
         <!-- container start -->
         <div class="container">
-            <div class="resturant-pic"><img src="images/McDonaldmenu.jpg" alt="mcdonald_menu"></div><!-- resturant's picture -->
-            <button class="share-button float-right clearfix" type="submit">Share</button><!-- share the url -->
-             <!-- input the order person -->
-            <div class="input-group input-group-sm col-sm-4 col-sm-offset-4">
-                <span class="input-group-addon" id="order_person">訂購人</span>
+            <div class="resturant-pic"><img src="images/McDonaldmenu.jpg" alt="mcdonald_menu"></div><!-- resturant's picture -->            
+            <div class="input-group input-group-sm col-sm-4 col-sm-offset-4 float-left clearfix">
+                <span class="input-group-addon">訂購人</span>  
                 <input type="text" class="form-control " placeholder="ex:Jason" aria-label="Username" aria-describedby="basic-addon1">
             </div>
-                      
-            <span class="text-danger">別忘了留下你的大名喔！</span>
-            <div class="row">
-                    <div class="input-group col-xs-12 col-lg-4">
-                        <span class="input-group-addon">
+            <span class="notice text-danger">別忘了留下你的大名喔！</span>
+            <button class="share-button float-right clearfix" type="submit">Share</button><!-- share the url -->
+             <!-- input the order person -->
+            <div class="row mt-3"> <!-- choose the meals and amounts -->
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
+                        <span class="input-group-addon">  <!-- checkbox -->
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>  <!-- output the meals'name -->
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
-                    <div class="input-group col-xs-12 col-lg-4">
+                    <div class="input-group col-sm-12 col-md-6 col-lg-4">
                         <span class="input-group-addon">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                         </span>
-                        <span class="input-group-addon">數量</span>
-                        <input type="text" class="form-control" placeholder="ex:1" aria-label="Text input with checkbox">
+                        <span class="input-group-addon">讀取便當名</span>
+                        <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
                     </div>
             </div>
+            <button class="confirm-button float-right clearfix" type="submit">送出</button>  <!-- button,submit the order -->
+            <ul class="mt-4">
+                <span class="text-danger">以下為成功訂購的訂單，如果尚未提供刪除功能，如需更改請找主揪</span> <!-- Notice that we can't delete the order right now -->
+                <li class="result-orders mt-4">
+                    <span class="text-success result-person">"輸出訂購人"</span>  <!-- output the order person -->
+                    <span>已經訂購了</span>
+                    <span class="text-primary result-meal">"輸出便當名"</span>  <!-- output the meal's name -->
+                    <span>*</span>
+                    <span class="text-danger result-amount">"輸出數量"</span>  <!-- output the amount of the meal -->
+                    <span>份</span>
+                </li>
+            </ul>
+            <hr>
+            <ul class="mt-4">
+                <li class="total-order">
+                    <span class="text-primary result-meal">"輸出便當名"</span>  <!-- output the meal's name -->
+                    <span>一共訂了</span>
+                    <span class="text-danger result-amount">"輸出總數量"</span>  <!-- output the total amount of the meals -->
+                    <span>份</span>
+                </li>
+            </ul>
         </div>
         <!-- container end -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
