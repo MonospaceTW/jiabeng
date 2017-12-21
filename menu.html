@@ -11,24 +11,43 @@
 </head>
 <body>
     <!-- header start-->
-    <div class="header">  
-        <div class="d-flex justify-content-around">  <!-- bootstrap's flexbox -->
-            <a href="index.html"><img class="logo" src="images/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
-            <h1 class="site-title text-center"><a href="#">McDonald</a></h1>  <!-- website's title, using h1 tag for SEO -->
-            <!-- <input class="search" type="search" placeholder="search..."> -->  <!-- 自己寫的 -->
-                <!-- search input （BS) -->
-                <div class="row d-none d-lg-block">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="button">Search</button>
-                        </span>
+    <div class="pos-f-t d-block d-lg-none"> <!-- <992px hamburger menu show up  -->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <div class="row">
+                        <div class="input-group"> <!-- search input in the hamburger menu（use BS4) -->
+                            <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Search</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            <!-- <i class="fa fa-search search-icon" aria-hidden="true"></i> --> <!-- magnifier for search, using the font aswsome -->
+            </div>
+                <nav class="navbar navbar-dark bg-dark">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </nav>
         </div>
-    </div>
-    <!-- header end-->
+        <!-- 現在是切出兩個header，下一步要將上下兩個合併 -->
+        <div class="header d-none d-lg-block">  
+            <div class="d-flex justify-content-around">  <!-- bootstrap's flexbox -->
+                <a href="index.html"><img class="logo" src="images/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
+                <h1 class="site-title text-center"><a href="index.html">“McDonald”</a></h1>  <!-- website's title, using h1 tag for SEO -->
+                <!-- >=992px, search input（use BS4) show up -->
+                    <div class="row d-lg-block">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                <!-- <i class="fa fa-search search-icon" aria-hidden="true"></i> --> <!-- magnifier for search, using the font aswsome -->
+            </div>
+        </div>
+        <!-- header end-->
         <!-- container start -->
         <div class="container">
             <div class="resturant-pic"><img src="images/McDonaldmenu.jpg" alt="mcdonald_menu"></div><!-- resturant's picture -->            
