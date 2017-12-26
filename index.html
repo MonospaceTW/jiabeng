@@ -10,31 +10,37 @@
 </head>
 <body>
     <!-- header start-->
-    <div class="pos-f-t d-block d-lg-none"> <!-- <992px hamburger menu show up  -->
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <div class="row">
-                        <div class="input-group"> <!-- search input in the hamburger menu（use BS4) -->
-                            <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="button">Search</button>
-                            </span>
-                        </div>
+    <header>
+        <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
+            <div><a href="welcome.html"><img class="site-logo" src="images/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
+            <h1 class="site-sm-title text-center">
+                <div class="d-flex flex-column">
+                    <a href="index.html">JiaBeng</a>
+                    <a href="index.html">來呷飯吧</a>
+                </div>
+            </h1>
+            <div class="text-right"> <!-- button of magnifier and it's action （放大鏡的按鈕及其功能） -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>   
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent">  <!-- collapse of the search bar （放大鏡按了之後多出來的空間）-->
+            <div class="p-5">
+                <div class="row">
+                    <div class="input-group"> <!-- search input in the magnifier（use BS4)（空間內的search欄） -->
+                        <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Search</button>  <!-- search button -->
+                        </span>
                     </div>
                 </div>
             </div>
-                <nav class="navbar navbar-dark bg-dark">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </nav>
         </div>
-        <!-- 現在是切出兩個header，下一步要將上下兩個合併 -->
-        <div class="header d-none d-lg-block">  
-            <div class="d-flex justify-content-around">  <!-- bootstrap's flexbox -->
-                <a href="index.html"><img class="logo" src="images/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
-                <h1 class="site-title text-center"><a href="index.html">Jiabeng</a></h1>  <!-- website's title, using h1 tag for SEO -->
-                <!-- >=992px, search input（use BS4) show up -->
+        <div class="d-none d-lg-block">  <!-- >=992px, search input（use BS4) show up （>=992px，search欄出現） -->
+                <div class="d-flex justify-content-around">  <!-- bootstrap's flexbox -->
+                    <a href="index.html"><img class="logo" src="images/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
+                    <h1 class="site-title text-center"><a href="index.html">Jiabeng</a></h1>  <!-- website's title, using h1 tag for SEO -->
                     <div class="row d-lg-block">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
@@ -43,25 +49,38 @@
                             </span>
                         </div>
                     </div>
-                <!-- <i class="fa fa-search search-icon" aria-hidden="true"></i> --> <!-- magnifier for search, using the font aswsome -->
+                    <!-- <i class="fa fa-search search-icon" aria-hidden="true"></i> --> <!-- magnifier for search, using the font aswsome -->
+                </div>
             </div>
-        </div>
-        <!-- header end-->
+    </header>
+    <!-- header end-->
     <!-- container start -->
     <div class="container">
-        <div class="row"> <!-- using the grid system with bootstrap -->
-            <div class="check col-sm-12 col-md-6 col-lg-4"><a href="menu.html">Mcdonald</a></div>  <!--lower than 768 pixels, the column the change from 3 column to 1 column --> 
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
-            <div class="check col-sm-12 col-md-6 col-lg-4"></div>
+        <div class="row" id="restaurant-list"> <!-- using the grid system with bootstrap -->
+            <!--lower than 768 pixels, the column the change from 3 column to 1 column --> 
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4" id="restaurant-choose-list">
+                <a href="menu.html">Mcdonald</a>
+                <span>"輸入便當店"</span>
+                <span>"輸入種類"</span>
+                <div>
+                    <span>營業時間：</span>
+                    <span>"輸入營業時間"</span>
+                </div>
+            </div>  
+            <div class="text-center d-flex flex-column" >
+                
+            </div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
+            <div class="mx-5 my-2 check col-sm-12 col-md-6 col-lg-4"></div>
         </div>
     </div>
 <script src="https://use.fontawesome.com/0b98b394ed.js"></script> <!-- import font awesome -->
