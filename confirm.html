@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to JiaBeng</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <!-- header start-->
+    <header>
+        <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
+            <div><a href="welcome.html"><img class="site-logo" src="images/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
+            <h1 class="site-sm-title text-center">
+                <div class="d-flex flex-column">
+                    <a href="index.html">JiaBeng</a>
+                    <a href="index.html">來呷飯吧</a>
+                </div>
+            </h1>
+            <div class="countdown" id="countdown">
+                <span>"30"</span>
+                <span>:</span>
+                <span>"00"</span>
+            </div>
+    </header>
+    <!-- header end-->
+    <div class="container d-flex flex-column" id="confirm">
+        <div class="d-flex justify-content-center mb-3">
+                <div class="resturant-pic"><img src="images/McDonaldmenu.jpg" alt="mcdonald_menu"></div><!-- resturant's picture -->            
+        </div>
+        <div class="row" id="eatthis-button">
+            <a class="offset-1 col-4 btn btn-primary" href="index.html" role="button">不要！</a>
+            <a class="offset-2 col-4 btn btn-primary" href="order.html" role="button">就是這家</a>
+        </div>
+            <span class="text-center">你確定要吃這家嗎？</span>
+    </div>
+</body>
+</html>
