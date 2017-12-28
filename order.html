@@ -8,21 +8,16 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <style>
-        span.input-group-addon:first-child{
-            min-width: 117px;
-        }
-    </style>
 </head>
 <body>
     <!-- header start-->
     <header>
-        <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
+        <div class="pos-f-t d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
             <div><a href="welcome.html"><img class="site-logo" src="images/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
             <h1 class="site-sm-title text-center">
                 <div class="d-flex flex-column">
-                    <a href="index.html">JiaBeng</a>
-                    <a href="index.html">來呷飯吧</a>
+                    <a href="order.html">JiaBeng</a>
+                    <a href="order.html">來呷飯吧</a>
                 </div>
             </h1>
             <div class="countdown" id="countdown">
@@ -34,42 +29,46 @@
     <!-- header end-->
     <!-- container start -->
     <div class="container">
-        <div class="resturant-pic"><img src="images/McDonaldmenu.jpg" alt="mcdonald_menu"></div><!-- resturant's picture -->            
+        <img class="resturant-pic" src="images/kfcmenu.png" alt="mcdonald_menu"><!-- resturant's picture -->            
         <div class="input-group input-group-sm col-sm-4 col-sm-offset-1 float-left clearfix">
+            <!-- input the order person -->
             <span class="input-group-addon">訂購人</span>  
             <input type="text" class="form-control " placeholder="ex:Jason" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <span class="notice text-danger">別忘了留下你的大名喔！</span>
-        <button class="share-button float-right clearfix" type="submit">Share</button><!-- share the url -->
-         <!-- input the order person -->
-        <div class="row mt-3" id="menu-list"> <!-- choose the meals and amounts -->
+        <div class="text-right"> <!-- 分享按鈕 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-share fa-2" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="row mt-3 menu-list" id="menu-list"> <!-- choose the meals and amounts（點餐與數量） -->
             <div class="input-group col-sm-12 col-md-6">
-                <span class="input-group-addon">"讀取便當名"</span>  <!-- output the meal's name -->
-                <span class="input-group-addon">"讀取價格$"</span>  <!-- output the meals's price -->
+                <span class="input-group-addon">"便當名"</span>  <!-- output the meal's name -->
+                <span class="input-group-addon">"價格$"</span>  <!-- output the meals's price -->
                 <input type="text" class="form-control" placeholder="請輸入數量" aria-label="Text input with checkbox">
             </div>
         </div>
-        <button class="confirm-button float-right clearfix" type="submit">送出</button>  <!-- button,submit the order -->
-        <div id="personal-order-list">
-            <ul class="mt-4">
-                <span class="text-danger">以下為成功訂購的訂單，如果尚未提供刪除功能，如需更改請找主揪</span> <!-- Notice that we can't delete the order right now -->
-                <li class="result-orders mt-4">
-                    <span class="text-success result-person">"輸出訂購人"</span>  <!-- output the order person -->
-                    <span>已經訂購了</span>
-                    <span class="text-primary result-meal">"輸出便當名"</span>  <!-- output the meal's name -->
-                    <span>*</span>
-                    <span class="text-danger result-amount">"輸出數量"</span>  <!-- output the amount of the meal -->
-                    <span>份</span>
-                </li>
-            </ul>
-        </div>  
+        <span class="text-danger">尚未提供刪除功能，如需更改請找主揪</span> <!-- Notice that we can't delete the order right now -->
+        <button class="offset-3 col-6 btn btn-success btn-sm" id="confirm-button" type="submit">送出</button>  <!-- button,submit the order -->
+        <div>明細</div>
+        <ul class="personal-order-list mt-4">
+            <li class="result-orders mt-4">
+                <span class="text-success">"訂購人"</span>  <!-- output the order person -->
+                <span>已經訂購了</span>
+                <span class="text-primary">"便當名"</span>  <!-- output the meal's name -->
+                <span>*</span>
+                <span class="text-danger">"數量"</span>  <!-- output the amount of the meal -->
+                <span>份</span>
+            </li>
+        </ul>
         <hr>
+        <span>團購訂單</span>
         <div id="group-order-list">
             <ul class="mt-4">
                 <li class="total-order">
-                    <span class="text-primary result-meal">"輸出便當名"</span>  <!-- output the meal's name -->
+                    <span class="text-primary">"輸出便當名"</span>  <!-- output the meal's name -->
                     <span>一共訂了</span>
-                    <span class="text-danger result-amount">"輸出總數量"</span>  <!-- output the total amount of the meals -->
+                    <span class="text-danger">"輸出總數量"</span>  <!-- output the total amount of the meals -->
                     <span>份</span>
                 </li>
             </ul>

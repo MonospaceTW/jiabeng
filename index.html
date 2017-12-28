@@ -19,14 +19,14 @@
                     <a href="index.html">來呷飯吧</a>
                 </div>
             </h1>
-            <div class="text-right"> <!-- button of magnifier and it's action （放大鏡的按鈕及其功能） -->
+            <div class="text-right search-icon"> <!-- button of magnifier and it's action （放大鏡的按鈕及其功能） -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
             </div>   
         </div>
         <div class="collapse" id="navbarToggleExternalContent">  <!-- collapse of the search bar （放大鏡按了之後多出來的空間）-->
-            <div class="p-5">
+            <div class="px-4 pt-2">
                 <div class="row">
                     <div class="input-group"> <!-- search input in the magnifier（use BS4)（空間內的search欄） -->
                         <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
@@ -39,7 +39,7 @@
         </div>
         <div class="d-none d-lg-block">  <!-- >=992px, search input（use BS4) show up （>=992px，search欄出現） -->
                 <div class="d-flex justify-content-around">  <!-- bootstrap's flexbox -->
-                    <a href="index.html"><img class="logo" src="images/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
+                    <a href="welcome.html"><img class="logo" src="images/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
                     <h1 class="site-title text-center"><a href="index.html">Jiabeng</a></h1>  <!-- website's title, using h1 tag for SEO -->
                     <div class="row d-lg-block">
                         <div class="input-group">
@@ -49,7 +49,7 @@
                             </span>
                         </div>
                     </div>
-                    <!-- <i class="fa fa-search search-icon" aria-hidden="true"></i> --> <!-- magnifier for search, using the font aswsome -->
+                    <!-- <i class="fa fa-search fa-5 search-icon" aria-hidden="true"></i> --> <!-- magnifier for search, using the font aswsome -->
                 </div>
             </div>
     </header>
@@ -58,19 +58,26 @@
     <div class="container">
         <div class="row" id="restaurant-list"> <!-- using the grid system with bootstrap -->
             <!--lower than 768 pixels, the column the change from 3 column to 1 column --> 
-            <div class="col-sm-12 col-md-6 col-lg-4 restaurant-choose-list" id="restaurant-list">
-                <ul>
-                    <li class="text-center d-flex flex-column" >
-                        <a href="confirm.html">Mcdonald</a>
-                        <span>"輸入便當店"</span>
-                        <span>"輸入種類"</span>
-                        <div>
-                            <span>營業時間：</span>
-                            <span>"輸入營業時間"</span>
-                        </div>    
-                    </li>
-                </ul>
-            </div>  
+            <ul class="col-sm-12 col-md-6 col-lg-4" id="restaurant-list">
+                <li class="my-2 text-center d-flex flex-column">
+                    <a href="confirm.html"><img class="restaurant-list" src="images/kfc-logo.svg" alt="McDonald"></a>
+                    <span>"輸入便當店"</span>
+                    <span>"輸入種類"</span>
+                    <div>
+                        <span>營業時間：</span>
+                        <span>"輸入營業時間"</span>
+                    </div>
+                </li>
+                <li class="my-2 text-center d-flex flex-column">
+                    <a href="confirm.html"><img class="restaurant-list" src="images/mcdonald-logo.svg" alt="McDonald"></a>
+                    <span>"輸入便當店"</span>
+                    <span>"輸入種類"</span>
+                    <div>
+                        <span>營業時間：</span>
+                        <span>"輸入營業時間"</span>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 <script src="https://use.fontawesome.com/0b98b394ed.js"></script> <!-- import font awesome -->
