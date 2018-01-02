@@ -14,18 +14,28 @@ header{
 }
 .resturant-pic{
     border:1px solid #ffffff;
-    width:80%;
+    width:100%;
     padding:2px;
     margin:0 auto;
+    height:auto;
+    margin:4px auto;
 }
 .container{
     margin:1rem auto;
 }
 .container img{
-    width:100%;
     height:auto;
     margin:4px auto;
 }
 .container meal{
     margin:4px auto;
+}
+.restaurant-list{
+    width:25vh;
+}
+.menu-list{
+    font-size:12px;
+}
+.search-icon{
+    font-size: 2rem;
 }

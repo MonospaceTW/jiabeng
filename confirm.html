@@ -11,12 +11,12 @@
 <body>
     <!-- header start-->
     <header>
-        <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
+        <div class="pos-f-t d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
             <div><a href="welcome.html"><img class="site-logo" src="images/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
             <h1 class="site-sm-title text-center">
                 <div class="d-flex flex-column">
-                    <a href="index.html">JiaBeng</a>
-                    <a href="index.html">來呷飯吧</a>
+                    <a href="confirm.html">JiaBeng</a>
+                    <a href="confirm.html">來呷飯吧</a>
                 </div>
             </h1>
             <div class="countdown" id="countdown">
@@ -27,12 +27,10 @@
     </header>
     <!-- header end-->
     <div class="container d-flex flex-column" id="confirm">
-        <div class="d-flex justify-content-center mb-3">
-                <div class="resturant-pic"><img src="images/McDonaldmenu.jpg" alt="mcdonald_menu"></div><!-- resturant's picture -->            
-        </div>
-        <div class="row" id="eatthis-button">
-            <a class="offset-1 col-4 btn btn-primary" href="index.html" role="button">不要！</a>
-            <a class="offset-2 col-4 btn btn-primary" href="order.html" role="button">就是這家</a>
+        <img class="resturant-pic" src="images/kfcmenu.png" alt="mcdonald_menu"><!-- resturant's picture -->            
+        <div class="d-flex flex-column" id="eatthis-button">
+            <a class="my-2 offset-3 col-6 btn btn-danger" href="index.html" role="button">不要！</a>
+            <a class="my-2 offset-3 col-6 btn btn-success" href="order.html" role="button">就是這家</a>
         </div>
             <span class="text-center">你確定要吃這家嗎？</span>
     </div>
