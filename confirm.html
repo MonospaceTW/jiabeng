@@ -12,27 +12,54 @@
     <!-- header start-->
     <header>
         <div class="pos-f-t d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
-            <div><a href="welcome.html"><img class="site-logo" src="images/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
+            <div><a href="list.html"><img class="site-logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
             <h1 class="site-sm-title text-center">
                 <div class="d-flex flex-column">
-                    <a href="confirm.html">JiaBeng</a>
-                    <a href="confirm.html">來呷飯吧</a>
+                    <a href="list.html">JiaBeng</a>
+                    <a href="list.html">來呷飯吧</a>
                 </div>
             </h1>
             <div class="countdown" id="countdown">
-                <span>"30"</span>
-                <span>:</span>
-                <span>"00"</span>
+                <span>"30" : "00"</span>
             </div>
     </header>
     <!-- header end-->
     <div class="container d-flex flex-column" id="confirm">
-        <img class="resturant-pic" src="images/kfcmenu.png" alt="mcdonald_menu"><!-- resturant's picture -->            
-        <div class="d-flex flex-column" id="eatthis-button">
-            <a class="my-2 offset-3 col-6 btn btn-danger" href="index.html" role="button">不要！</a>
-            <a class="my-2 offset-3 col-6 btn btn-success" href="order.html" role="button">就是這家</a>
+        <div class="d-flex justify-content-center mb-3">
+            <div id="menuImg" class="resturant-pic">
+                <!--    <img src="img/McDonaldmenu.jpg" alt="mcdonald_menu"> -->
+            </div>       
         </div>
-            <span class="text-center">你確定要吃這家嗎？</span>
+        <!-- <p class="text-center">你確定要吃這家嗎？</p> -->
+        <a class="my-2 offset-3 col-6 btn btn-danger" href="list.html" role="button">回上一頁</a>
+        <a id="establish" class="my-2 offset-3 col-6 btn btn-success" href="order.html" role="button">開始訂餐！</a>
     </div>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDawS0j0ZCjPMowGc2iPj_cyG1-Gahqd5o",
+        authDomain: "jiabeng-d02cb.firebaseapp.com",
+        databaseURL: "https://jiabeng-d02cb.firebaseio.com",
+        projectId: "jiabeng-d02cb",
+        storageBucket: "jiabeng-d02cb.appspot.com",
+        messagingSenderId: "506912575380"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="js/camp.js"></script>
+
+<style>
+    h2{
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 800;
+    }
+    span.text-center{
+        margin-top: 30px;
+    }
+</style>
+
 </html>

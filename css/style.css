@@ -14,28 +14,39 @@ header{
 }
 .resturant-pic{
     border:1px solid #ffffff;
-    width:100%;
+    width:80%;
     padding:2px;
     margin:0 auto;
-    height:auto;
-    margin:4px auto;
 }
 .container{
     margin:1rem auto;
 }
 .container img{
+    width:100%;
     height:auto;
     margin:4px auto;
 }
 .container meal{
     margin:4px auto;
 }
-.restaurant-list{
-    width:25vh;
+.input-border{
+    border: 1px solid black;
 }
-.menu-list{
-    font-size:12px;
+.name-input{
+    min-width: 40vw;
 }
-.search-icon{
-    font-size: 2rem;
+.mealName{
+    max-width: 20vw;
+    white-space: nowrap;
+}
+.mealPrice{
+    max-width: 30vw;
+    white-space: nowrap;
+}
+.mealAmount{
+    max-width: 20vw;
+    white-space: nowrap;
+}
+.dishList{
+    padding-right:23px;
 }
