@@ -3,7 +3,8 @@
 
 body{
     background-color: #da706f;
-    /* for iPhone6/7/8 */
+    
+    /* for iPhone 6/7/8 */
     header{
         width: 100%;
         height: auto;
@@ -13,17 +14,35 @@ body{
             height: 34px;
             width: 173px;
             display: block;
-            margin: 88px auto 75px;
+            margin: 88px auto 71px;
+            }
+        }
+    }
+    /* for iPhone 5/SE */
+    @media (max-width: 320px){
+        header{
+            width: 100%;
+            height: auto;
+            h1{
+                margin-bottom: 0; /* 清除bootstrap 4 h1 tag的預設margin-bottom:2.5rem */
+                .logotype{
+                height: 34px;
+                width: 173px;
+                display: block;
+                margin: 54px auto 51px;
+                }
             }
         }
     }
 }
 
 .container{
+    width: 100%;
+    /* for iPhone 6/7/8 */
     .logo-index{
         width: 234px;
         height: 224px;
-        margin-bottom: 76px;
+        margin-bottom: 72px;
     }
     .button{
         color:#ffffff;
@@ -37,5 +56,11 @@ body{
         border-radius: 12px;
         cursor: pointer;
         box-shadow: 3px 3px 3px 1px #935452;
+    }
+    /* for iPhone 5/SE */
+    @media (max-width: 320px){
+        .logo-index{
+            margin-bottom: 52px;
+        }
     }
 }

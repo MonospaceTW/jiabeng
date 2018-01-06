@@ -16,7 +16,8 @@ body {
 /* 沒有import “layout” */
 body {
   background-color: #da706f;
-  /* for iPhone6/7/8 */ }
+  /* for iPhone 6/7/8 */
+  /* for iPhone 5/SE */ }
   body header {
     width: 100%;
     height: auto; }
@@ -27,23 +28,41 @@ body {
         height: 34px;
         width: 173px;
         display: block;
-        margin: 88px auto 75px; }
+        margin: 88px auto 71px; }
+  @media (max-width: 320px) {
+    body header {
+      width: 100%;
+      height: auto; }
+      body header h1 {
+        margin-bottom: 0;
+        /* 清除bootstrap 4 h1 tag的預設margin-bottom:2.5rem */ }
+        body header h1 .logotype {
+          height: 34px;
+          width: 173px;
+          display: block;
+          margin: 54px auto 51px; } }
 
-.container .logo-index {
-  width: 234px;
-  height: 224px;
-  margin-bottom: 76px; }
-
-.container .button {
-  color: #ffffff;
-  border: solid #ffffff 1px;
-  margin-bottom: 25px;
-  padding: 10px;
-  width: 178px;
-  height: 46px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 12px;
-  cursor: pointer;
-  -webkit-box-shadow: 3px 3px 3px 1px #935452;
-  box-shadow: 3px 3px 3px 1px #935452; }
+.container {
+  width: 100%;
+  /* for iPhone 6/7/8 */
+  /* for iPhone 5/SE */ }
+  .container .logo-index {
+    width: 234px;
+    height: 224px;
+    margin-bottom: 72px; }
+  .container .button {
+    color: #ffffff;
+    border: solid #ffffff 1px;
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 178px;
+    height: 46px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-box-shadow: 3px 3px 3px 1px #935452;
+    box-shadow: 3px 3px 3px 1px #935452; }
+  @media (max-width: 320px) {
+    .container .logo-index {
+      margin-bottom: 52px; } }
