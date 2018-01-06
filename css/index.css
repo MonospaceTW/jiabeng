@@ -1,4 +1,7 @@
 @charset "UTF-8";
+a:hover {
+  text-decoration: none; }
+
 body {
   font-size: 16px;
   font-family: Microsoft JhengHei;
@@ -32,11 +35,13 @@ body {
   margin-bottom: 76px; }
 
 .container .button {
+  color: #ffffff;
   border: solid #ffffff 1px;
   margin-bottom: 25px;
   padding: 10px;
   width: 178px;
   height: 46px;
+  display: inline-block;
   text-align: center;
   border-radius: 12px;
   cursor: pointer;
