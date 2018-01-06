@@ -11,8 +11,8 @@
 <body>
     <!-- header start-->
     <header>
-        <div class="pos-f-t d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
-            <div><a href="list.html"><img class="logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
+        <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
+            <div><a href="index.html"><img class="site-logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
             <h1 class="site-sm-title text-center">
                 <div class="d-flex flex-column">
                     <a href="list.html">JiaBeng</a>
@@ -29,10 +29,14 @@
             <div id="menuImg" class="resturant-pic">
                 <!--    <img src="img/McDonaldmenu.jpg" alt="mcdonald_menu"> -->
             </div>       
+                
         </div>
-        <!-- <p class="text-center">你確定要吃這家嗎？</p> -->
-        <a class="my-2 offset-3 col-6 btn btn-danger" href="list.html" role="button">回上一頁</a>
-        <a id="establish" class="my-2 offset-3 col-6 btn btn-success" href="order.html" role="button">開始訂餐！</a>
+        <p class="text-center">你確定要吃這家嗎？</p>
+        <div class="row">
+            <a  id="establish" class="offset-2 col-4 btn btn-primary" href="#" role="button">就是這家</a>
+            <a class="offset-1 col-4 btn btn-primary" href="list.html" role="button">容朕再思量</a>
+        </div>
+        
     </div>
 </body>
 

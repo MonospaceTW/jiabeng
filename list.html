@@ -13,7 +13,7 @@
     <!-- header start-->
     <header>
         <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
-            <div><a href="list.html"><img class="logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
+            <div><a href="welcome.html"><img class="site-logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
             <h1 class="site-sm-title text-center">
                 <div class="d-flex flex-column">
                     <a href="list.html">JiaBeng</a>
@@ -59,11 +59,11 @@
     <div class="container">
         <div class="row" > <!-- using the grid system with bootstrap -->
             <!--lower th id="storeList"an 768 pixels, the column the change from 3 column to 1 column --> 
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 restaurant-choose-list" >
                 <ul id="storeList">
-                    <li class="my-2 text-center d-flex flex-column" >
+                    <li class="text-center d-flex flex-column" >
                         <a href="confirm.html">Mcdonald</a>
-                        <a href="confirm.html">"輸入便當店"</a>
+                        <span>"輸入便當店"</span>
                         <span>"輸入種類"</span>
                         <div>
                             <span>營業時間：</span>
@@ -95,4 +95,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
+
+<style>
+ul li{
+    margin-top: 30px;
+}
+.check{
+    text-align: center;
+    line-height: 100px;
+    color: red;
+    font-size: 24px;
+    font-weight: 800;
+}
+a:hover{
+        text-decoration: none;
+    }
+</style>
+
 </html>
