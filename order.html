@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <style>
+    <!-- <style>
         span.input-group-addon:first-child{
             min-width: 117px;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     
     <header>
         <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
-            <div><a href="list.html"><img class="site-logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
+            <div><a href="list.html"><img class="logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
             <h1 class="site-sm-title text-center">
                 <div class="d-flex flex-column">
                     <a href="list.html">JiaBeng</a>
@@ -57,41 +57,37 @@
         </ul>
     </div>
     <hr>
-        <ul id="membersOrder" class="mt-4">    
-            <li class="membersOrders mt-4">
-                <span>數量：</span>
-                <ul>
-                    <li>
-                        <span>玉米濃湯</span>
-                        <span>1</span>
-                        <span>份</span>
-                    </li>
-                </ul>
-                <div>
-                    <span>總價：$</span>
-                    <span>120</span>
-                </div>
-                <div>
-                    <span>訂購人：</span>
-                    <span>Jason</span>
-                </div>
+    <span>數量：</span>
+    <div id="membersOrder" class="mt-4 membersOrders">    
+        <ul>
+            <li>
+                <span>玉米濃湯</span>
+                <span>1份</span>
             </li>
-        </ul> 
-        <button id="btn" class="btn offset-3 col-6" type="submit">送出</button>
-
-        <hr>
-        <div id="group-order-list">
-            <ul class="mt-4">
-                <li class="total-order">
-                    <span class="text-primary result-meal">"輸出便當名"</span>  <!-- output the meal's name -->
-                    <span>一共訂了</span>
-                    <span class="text-danger result-amount">"輸出總數量"</span>  <!-- output the total amount of the meals -->
-                    <span>份</span>
-                </li>
-            </ul>
+        </ul>
+        <div>
+            <span>總價：</span>
+            <span>$120</span>
         </div>
+        <div>
+            <span>訂購人：</span>
+            <span>Jason</span>
+        </div>
+    </div> 
+    <button id="btn" class="btn offset-3 col-6" type="submit">送出</button>
 
+    <hr>
+    <div id="group-order-list">
+        <ul class="mt-4">
+            <li class="total-order">
+                <span class="text-primary result-meal">"輸出便當名"</span>  <!-- output the meal's name -->
+                <span>一共訂了</span>
+                <span class="text-danger result-amount">"輸出總數量"</span>  <!-- output the total amount of the meals -->
+                <span>份</span>
+            </li>
+        </ul>
     </div>
+
     
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script src="https://use.fontawesome.com/0b98b394ed.js"></script>

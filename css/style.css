@@ -1,52 +1,28 @@
-@import url(global.css);
-@import url(layout.css);
+@charset "UTF-8";
+body {
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  color: #ffffff; }
+  body ul {
+    list-style-type: none;
+    margin: 0px; }
+    body ul li {
+      list-style-type: none;
+      margin-left: -19px; }
 
-@media (max-width:768px){
-    .site-sm-title{
-        font-size: 16px;
-    }
-}
-header{
-    min-height:50px;
-}
-.site-logo{
-    width:64px;
-}
-.resturant-pic{
-    border:1px solid #ffffff;
-    width:80%;
-    padding:2px;
-    margin:0 auto;
-}
-.container{
-    margin:1rem auto;
-}
-.container img{
-    width:100%;
-    height:auto;
-    margin:4px auto;
-}
-.container meal{
-    margin:4px auto;
-}
-.input-border{
-    border: 1px solid black;
-}
-.name-input{
-    min-width: 40vw;
-}
-.mealName{
-    max-width: 20vw;
-    white-space: nowrap;
-}
-.mealPrice{
-    max-width: 30vw;
-    white-space: nowrap;
-}
-.mealAmount{
-    max-width: 20vw;
-    white-space: nowrap;
-}
-.dishList{
-    padding-right:23px;
-}
+header {
+  min-height: 70px; }
+  header .logo {
+    width: 64px; }
+  header .search-bar {
+    width: 32px; }
+  header .search-icon {
+    font-size: 100px; }
+  header::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+/* 上面很爛 */
+.content {
+  width: 100%; }

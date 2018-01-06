@@ -1,0 +1,22 @@
+header{
+    min-height:70px;
+    .logo{
+        width:64px;
+    }
+    .search-bar{
+        width:32px;
+    }
+    .search-icon{
+        font-size: 100px;
+    }
+    &::after{
+        content:"";
+        display: block;
+        clear: both;
+    }
+}
+
+/* 上面很爛 */
+.content{
+    width:100%;
+}

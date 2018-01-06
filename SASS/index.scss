@@ -1,0 +1,39 @@
+@import "global";
+/* 沒有import “layout” */
+
+body{
+    background-color: #da706f;
+    /* for iPhone6/7/8 */
+    header{
+        width: 100%;
+        height: auto;
+        h1{
+            margin-bottom: 0; /* 清除bootstrap 4 h1 tag的預設margin-bottom:2.5rem */
+            .logotype{
+            height: 34px;
+            width: 173px;
+            display: block;
+            margin: 88px auto 75px;
+            }
+        }
+    }
+}
+
+.container{
+    .logo-index{
+        width: 234px;
+        height: 224px;
+        margin-bottom: 76px;
+    }
+    .button{
+        border: solid #ffffff 1px;
+        margin-bottom: 25px;
+        padding: 10px;
+        width: 178px;
+        height: 46px;
+        text-align: center;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px 1px #935452;
+    }
+}
