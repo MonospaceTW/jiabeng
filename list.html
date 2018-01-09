@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JiaBeng</title>
+    <title>餐廳選擇</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" type="text/css">    
+    <link rel="stylesheet" href="css/list.css" type="text/css">    
 </head>
 <body>
-    
-    <!-- header start-->
     <header>
-        <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
-            <div><a href="welcome.html"><img class="site-logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
-            <h1 class="site-sm-title text-center">
-                <div class="d-flex flex-column">
-                    <a href="list.html">JiaBeng</a>
-                    <a href="list.html">來呷飯吧</a>
-                </div>
+        <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
+        <div class="pos-f-t d-block d-lg-none d-flex"> 
+            <div><a href="list.html"><img class="site-logo p-2" src="img/logo-index.svg" alt="place logo.svg"></a></div>
+            <h1>
+                <img class="site-logotype p-2" src="img/logotype.svg" alt="logotype.svg">               
             </h1>
-            <div class="text-right"> <!-- button of magnifier and it's action （放大鏡的按鈕及其功能） -->
+            <div class="text-right ml-auto p-2"> <!-- button of magnifier and it's action （放大鏡的按鈕及其功能） -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
@@ -38,11 +34,14 @@
                 </div>
             </div>
         </div>
-        <div class="d-none d-lg-block">  <!-- >=992px, search input（use BS4) show up （>=992px，search欄出現） -->
-                <div class="d-flex justify-content-around">  <!-- bootstrap's flexbox -->
-                    <a href="list.html"><img class="logo" src="img/favicon_64x64.svg" alt="jiabeng"></a> <!-- Mono miao -->
-                    <h1 class="site-title text-center"><a href="list.html">Jiabeng</a></h1>  <!-- website's title, using h1 tag for SEO -->
-                    <div class="row d-lg-block">
+        <!-- >=992px, search input（use BS4) show up （>=992px，search欄出現） -->
+        <div class="d-none d-lg-block">  
+                <div class="d-flex">  <!-- bootstrap's flexbox -->
+                    <a href="list.html"><img class="site-logo p-2" src="img/logo-index.svg" alt="logo"></a> <!-- Mono miao -->
+                    <h1>
+                        <img class="site-logotype p-2" src="img/logotype.svg" alt="jiabeng">
+                    </h1>
+                    <div class="row d-lg-block ml-auto p-2">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
                             <span class="input-group-btn">
@@ -54,27 +53,26 @@
                 </div>
             </div>
     </header>
-    <!-- header end-->
-    <!-- container start -->
+    <!-- header中class name需知:ml-auto為3個elements,左2右1的版型 -->
+    
     <div class="container">
-        <div class="row" > <!-- using the grid system with bootstrap -->
-            <!--lower th id="storeList"an 768 pixels, the column the change from 3 column to 1 column --> 
-            <div class="col-sm-12 col-md-6 col-lg-4 restaurant-choose-list" >
-                <ul id="storeList">
-                    <li class="text-center d-flex flex-column" >
-                        <a href="confirm.html">Mcdonald</a>
+     <!-- grid system（網格系統） -->
+            <ul id="storeList" class="row store-list">
+                <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center flex-column">
+                    <a href="confirm.html" class="d-flex align-items-center justify-content-center flex-column">
                         <span>"輸入便當店"</span>
-                        <span>"輸入種類"</span>
-                        <div>
-                            <span>營業時間：</span>
-                            <span>"輸入營業時間"</span>
-                        </div>    
-                    </li>
-                </ul>
-            </div>  
-        </div>
+                        <img src="img/logo-index.svg" alt="">
+                    </a>
+                    <span>"輸入"</span>
+                    <div>
+                        <span>營業時間：</span>
+                        <span>"輸入營業時間"</span>
+                    </div>    
+                </li>
+            </ul>
     </div>
 
+</body>
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 <script>
     // Initialize Firebase
@@ -94,22 +92,5 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-</body>
-
-<style>
-ul li{
-    margin-top: 30px;
-}
-.check{
-    text-align: center;
-    line-height: 100px;
-    color: red;
-    font-size: 24px;
-    font-weight: 800;
-}
-a:hover{
-        text-decoration: none;
-    }
-</style>
 
 </html>

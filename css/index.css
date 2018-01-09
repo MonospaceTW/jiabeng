@@ -1,46 +1,52 @@
 @charset "UTF-8";
+a {
+  color: #ffffff; }
+
 a:hover {
+  color: #ffffff;
   text-decoration: none; }
+
+a:visited {
+  color: #ffffff; }
 
 body {
   font-size: 16px;
   font-family: Microsoft JhengHei;
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: #da706f; }
   body ul {
     list-style-type: none;
-    margin: 0px; }
+    padding-left: 0px; }
     body ul li {
-      list-style-type: none;
-      margin-left: -19px; }
+      list-style-type: none; }
 
 /* 沒有import “layout” */
-body {
-  background-color: #da706f;
-  /* for iPhone 6/7/8 */
-  /* for iPhone 5/SE */ }
-  body header {
+/* for iPhone 6/7/8 */
+header {
+  width: 100%;
+  height: auto; }
+  header h1 {
+    margin-bottom: 0;
+    /* 清除bootstrap 4 h1 tag的預設margin-bottom:2.5rem */ }
+    header h1 .logotype-index {
+      height: 34px;
+      width: 173px;
+      display: block;
+      margin: 88px auto 71px; }
+
+/* for iPhone 5/SE */
+@media (max-width: 320px) {
+  header {
     width: 100%;
     height: auto; }
-    body header h1 {
+    header h1 {
       margin-bottom: 0;
       /* 清除bootstrap 4 h1 tag的預設margin-bottom:2.5rem */ }
-      body header h1 .logotype {
+      header h1 .logotype-index {
         height: 34px;
         width: 173px;
         display: block;
-        margin: 88px auto 71px; }
-  @media (max-width: 320px) {
-    body header {
-      width: 100%;
-      height: auto; }
-      body header h1 {
-        margin-bottom: 0;
-        /* 清除bootstrap 4 h1 tag的預設margin-bottom:2.5rem */ }
-        body header h1 .logotype {
-          height: 34px;
-          width: 173px;
-          display: block;
-          margin: 54px auto 51px; } }
+        margin: 54px auto 51px; } }
 
 .container {
   width: 100%;
@@ -66,3 +72,48 @@ body {
   @media (max-width: 320px) {
     .container .logo-index {
       margin-bottom: 52px; } }
+
+.shadow-wrap {
+  display: none; }
+
+@media (width: 320px) {
+  .shadow-wrap {
+    display: block;
+    overflow: hidden;
+    width: 568px; }
+    .shadow-wrap .shadow1 {
+      width: 181px;
+      height: 262px;
+      background-color: #C36663;
+      -webkit-transform: skew(45deg, -35deg);
+      -ms-transform: skew(45deg, -35deg);
+      transform: skew(45deg, -35deg);
+      position: absolute;
+      top: 224px;
+      left: 197px;
+      z-index: -1;
+      overflow: hidden; }
+    .shadow-wrap .shadow2 {
+      width: 10px;
+      height: 262px;
+      background-color: #C36663;
+      -webkit-transform: skew(45deg, -35deg);
+      -ms-transform: skew(45deg, -35deg);
+      transform: skew(45deg, -35deg);
+      position: absolute;
+      top: 319px;
+      left: 206px;
+      z-index: -1;
+      overflow: hidden; }
+    .shadow-wrap .shadow3 {
+      width: 50px;
+      height: 262px;
+      background-color: #C36663;
+      -webkit-transform: skew(45deg, -35deg);
+      -ms-transform: skew(45deg, -35deg);
+      transform: skew(45deg, -35deg);
+      position: absolute;
+      top: 316px;
+      left: 205px;
+      z-index: -1;
+      overflow: hidden; } }

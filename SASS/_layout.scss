@@ -1,7 +1,28 @@
 header{
-    min-height:70px;
-    .logo{
-        width:64px;
+    min-height: 70px;
+    .site-logo{
+        width: 64px;
+        @media(min-width: 768px){
+            width: 150px;        
+        }
+        @media(min-width: 992px){
+            width: 200px;        
+        }
+        @media(min-width: 1200px){
+            width: 250px;        
+        }
+    }
+    .site-logotype{
+        width: 100px;
+        @media(min-width: 768px){
+            width: 200px;
+        }
+        @media(min-width: 992px){
+            width: 300px;        
+        }
+        @media(min-width: 1200px){
+            width: 500px;        
+        }
     }
     .search-bar{
         width:32px;
@@ -17,6 +38,18 @@ header{
 }
 
 /* 上面很爛 */
-.content{
+.container{
     width:100%;
+    .store-list{
+        li{
+            margin: 30px auto 30px;
+            min-width: 50vw;
+            text-align:center;
+            
+            span{
+                max-width: 40vw; 
+            }
+            }
+    }
+    
 }

@@ -1,18 +1,23 @@
+a{
+    color: #ffffff
+}
 a:hover{
+    color: #ffffff;
     text-decoration:  none;
 }
-
+a:visited{
+    color: #ffffff;
+}
 body{
     font-size:16px;
     font-family: Microsoft JhengHei;
     color: #ffffff;
-    
+    background-color: #da706f;
     ul{
         list-style-type:none;
-        margin:0px;
+        padding-left:0px;
         li{
             list-style-type:none;
-            margin-left:-19px;
         }
     }
 }

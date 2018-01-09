@@ -1,0 +1,64 @@
+@charset "UTF-8";
+a {
+  color: #ffffff; }
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+a:visited {
+  color: #ffffff; }
+
+body {
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  color: #ffffff;
+  background-color: #da706f; }
+  body ul {
+    list-style-type: none;
+    padding-left: 0px; }
+    body ul li {
+      list-style-type: none; }
+
+header {
+  min-height: 70px; }
+  header .site-logo {
+    width: 64px; }
+    @media (min-width: 768px) {
+      header .site-logo {
+        width: 150px; } }
+    @media (min-width: 992px) {
+      header .site-logo {
+        width: 200px; } }
+    @media (min-width: 1200px) {
+      header .site-logo {
+        width: 250px; } }
+  header .site-logotype {
+    width: 100px; }
+    @media (min-width: 768px) {
+      header .site-logotype {
+        width: 200px; } }
+    @media (min-width: 992px) {
+      header .site-logotype {
+        width: 300px; } }
+    @media (min-width: 1200px) {
+      header .site-logotype {
+        width: 500px; } }
+  header .search-bar {
+    width: 32px; }
+  header .search-icon {
+    font-size: 100px; }
+  header::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+/* 上面很爛 */
+.container {
+  width: 100%; }
+  .container .store-list li {
+    margin: 30px auto 30px;
+    min-width: 50vw;
+    text-align: center; }
+    .container .store-list li span {
+      max-width: 40vw; }
