@@ -79,8 +79,7 @@ header {
 @media (width: 320px) {
   .shadow-wrap {
     display: block;
-    overflow: hidden;
-    width: 568px; }
+    width: 320px; }
     .shadow-wrap .shadow1 {
       width: 181px;
       height: 262px;

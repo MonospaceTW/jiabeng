@@ -23,10 +23,10 @@ header{
         h1{
             margin-bottom: 0; /* 清除bootstrap 4 h1 tag的預設margin-bottom:2.5rem */
             .logotype-index{
-            height: 34px;
-            width: 173px;
-            display: block;
-            margin: 54px auto 51px;
+                height: 34px;
+                width: 173px;
+                display: block;
+                margin: 54px auto 51px;
             }
         }
     }
@@ -61,14 +61,14 @@ header{
         }
     }
 }
+
 .shadow-wrap{
     display: none;
 }
 @media(width:320px){
     .shadow-wrap{
-        display: block;
-        overflow: hidden;
-        width: 568px;
+        display: block; 
+        width: 320px;
         .shadow1{
             width: 181px;
             height: 262px;
@@ -103,5 +103,4 @@ header{
             overflow: hidden;
         }
     }
-    
 }
