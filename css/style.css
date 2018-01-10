@@ -1,14 +1,4 @@
 @charset "UTF-8";
-a {
-  color: #ffffff; }
-
-a:hover {
-  color: #ffffff;
-  text-decoration: none; }
-
-a:visited {
-  color: #ffffff; }
-
 body {
   font-size: 16px;
   font-family: Microsoft JhengHei;
@@ -19,6 +9,20 @@ body {
     padding-left: 0px; }
     body ul li {
       list-style-type: none; }
+
+a:link {
+  color: #ffffff; }
+
+a:visited {
+  color: #ffffff; }
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+a:active {
+  color: #da706f;
+  background-color: #ffffff; }
 
 header {
   min-height: 70px; }
@@ -56,9 +60,3 @@ header {
 /* 上面很爛 */
 .container {
   width: 100%; }
-  .container .store-list li {
-    margin: 30px auto 30px;
-    min-width: 50vw;
-    text-align: center; }
-    .container .store-list li span {
-      max-width: 40vw; }

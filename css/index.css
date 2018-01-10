@@ -1,14 +1,4 @@
 @charset "UTF-8";
-a {
-  color: #ffffff; }
-
-a:hover {
-  color: #ffffff;
-  text-decoration: none; }
-
-a:visited {
-  color: #ffffff; }
-
 body {
   font-size: 16px;
   font-family: Microsoft JhengHei;
@@ -19,6 +9,20 @@ body {
     padding-left: 0px; }
     body ul li {
       list-style-type: none; }
+
+a:link {
+  color: #ffffff; }
+
+a:visited {
+  color: #ffffff; }
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+a:active {
+  color: #da706f;
+  background-color: #ffffff; }
 
 /* 沒有import “layout” */
 /* for iPhone 6/7/8 */
@@ -57,7 +61,6 @@ header {
     height: 224px;
     margin-bottom: 72px; }
   .container .button {
-    color: #ffffff;
     border: solid #ffffff 1px;
     margin-bottom: 25px;
     padding: 10px;
@@ -79,7 +82,7 @@ header {
 @media (width: 320px) {
   .shadow-wrap {
     display: block;
-    width: 320px; }
+    width: 60px; }
     .shadow-wrap .shadow1 {
       width: 181px;
       height: 262px;
