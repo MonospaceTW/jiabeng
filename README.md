@@ -28,3 +28,10 @@ v1.0.2
 
 v1.1.0
 confirm.html按照wireframe刻。
+
+2018.01.10
+
+v1.1.1
+confirm.html內補上 <script>
+
+2018.01.10
