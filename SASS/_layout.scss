@@ -28,16 +28,9 @@ header{
         width:32px;
     }
     .search-icon{
-        font-size: 100px;
-    }
-    &::after{
-        content:"";
-        display: block;
-        clear: both;
+        font-size: 500px;
     }
 }
-
-/* 上面很爛 */
 .container{
     width:100%;  
 }

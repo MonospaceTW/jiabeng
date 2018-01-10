@@ -9,6 +9,16 @@ body {
     padding-left: 0px; }
     body ul li {
       list-style-type: none; }
+  body .button {
+    border: solid #ffffff 1px;
+    margin-bottom: 25px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-box-shadow: 3px 3px 3px 1px #935452;
+    box-shadow: 3px 3px 3px 1px #935452; }
 
 a:link {
   color: #ffffff; }
@@ -62,14 +72,10 @@ header {
     margin-bottom: 72px; }
   .container .button {
     border: solid #ffffff 1px;
-    margin-bottom: 25px;
     padding: 10px;
     width: 178px;
     height: 46px;
-    display: inline-block;
-    text-align: center;
     border-radius: 12px;
-    cursor: pointer;
     -webkit-box-shadow: 3px 3px 3px 1px #935452;
     box-shadow: 3px 3px 3px 1px #935452; }
   @media (max-width: 320px) {
@@ -86,7 +92,7 @@ header {
     .shadow-wrap .shadow1 {
       width: 181px;
       height: 262px;
-      background-color: #C36663;
+      background-color: #d15f5f;
       -webkit-transform: skew(45deg, -35deg);
       -ms-transform: skew(45deg, -35deg);
       transform: skew(45deg, -35deg);
@@ -98,7 +104,7 @@ header {
     .shadow-wrap .shadow2 {
       width: 10px;
       height: 262px;
-      background-color: #C36663;
+      background-color: #d15f5f;
       -webkit-transform: skew(45deg, -35deg);
       -ms-transform: skew(45deg, -35deg);
       transform: skew(45deg, -35deg);
@@ -110,7 +116,7 @@ header {
     .shadow-wrap .shadow3 {
       width: 50px;
       height: 262px;
-      background-color: #C36663;
+      background-color: #d15f5f;
       -webkit-transform: skew(45deg, -35deg);
       -ms-transform: skew(45deg, -35deg);
       transform: skew(45deg, -35deg);

@@ -4,37 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to JiaBeng</title>
+    <title>Are You Sure ?</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/confirm.css" type="text/css">
 </head>
 <body>
-    <!-- header start-->
     <header>
-        <div class="pos-f-t d-block d-lg-none d-flex justify-content-around"> <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
-            <div><a href="index.html"><img class="site-logo" src="img/favicon_64x64.svg" alt="JiaBeng's logo"></a></div>
-            <h1 class="site-sm-title text-center">
-                <div class="d-flex flex-column">
-                    <a href="list.html">JiaBeng</a>
-                    <a href="list.html">來呷飯吧</a>
-                </div>
+        <!-- <992px magnifier show up（小於992px，只有放大鏡）  -->
+        <div class="pos-f-t d-block d-lg-none d-flex"> 
+            <div><a href="list.html"><img class="site-logo p-2" src="img/logo-index.svg" alt="place logo.svg"></a></div>
+            <h1>
+                <img class="site-logotype p-2" src="img/logotype.svg" alt="logotype.svg">               
             </h1>
-            <div class="countdown" id="countdown">
-                <span>"30" : "00"</span>
+            <div class="text-right ml-auto p-2"> <!-- button of magnifier and it's action （放大鏡的按鈕及其功能） -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>   
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent">  <!-- collapse of the search bar （放大鏡按了之後多出來的空間）-->
+            <div class="px-5">
+                <div class="row">
+                    <div class="input-group"> <!-- search input in the magnifier（use BS4)（空間內的search欄） -->
+                        <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Search</button>  <!-- search button -->
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- >=992px, search input（use BS4) show up （>=992px，search欄出現） -->
+        <div class="d-none d-lg-block">  
+                <div class="d-flex">  <!-- bootstrap's flexbox -->
+                    <a href="list.html"><img class="site-logo p-2" src="img/logo-index.svg" alt="logo"></a> <!-- Mono miao -->
+                    <h1>
+                        <img class="site-logotype p-2" src="img/logotype.svg" alt="jiabeng">
+                    </h1>
+                    <div class="row d-lg-block ml-auto p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="ex:McDonald,..." aria-label="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- <i class="fa fa-search search-icon" aria-hidden="true"></i> --> <!-- magnifier for search, using the font aswsome -->
+                </div>
             </div>
     </header>
-    <!-- header end-->
-    <div class="container d-flex flex-column" id="confirm">
-        <div class="d-flex justify-content-center mb-3">
-            <div id="menuImg" class="resturant-pic">
-                <!--    <img src="img/McDonaldmenu.jpg" alt="mcdonald_menu"> -->
+    <!-- header中class name需知:ml-auto為3個elements,左2右1的版型 -->
+
+    <div class="container d-flex flex-column">
+        <div class="d-flex justify-content-center">
+            <div id="menuImg" class="text-center">
+                <img src="" alt="">
+                <h2></h2>  
             </div>       
-                
         </div>
         <p class="text-center">你確定要吃這家嗎？</p>
-        <div class="row">
-            <a  id="establish" class="offset-2 col-4 btn btn-primary" href="order.html" role="button">就是這家</a>
-            <a class="offset-1 col-4 btn btn-primary" href="list.html" role="button">容朕再思量</a>
+        <div class="d-flex flex-column">
+            <a class="button" href="list.html">不要！</a>
+            <a id="establish" class="button"  href="order.html">就是這家</a>
         </div>
         
     </div>
@@ -54,16 +85,8 @@
     firebase.initializeApp(config);
 </script>
 <script src="js/camp.js"></script>
+<script src="https://use.fontawesome.com/0b98b394ed.js"></script> <!-- import font awesome -->
 
-<style>
-    h2{
-        margin-top: 30px;
-        text-align: center;
-        font-weight: 800;
-    }
-    span.text-center{
-        margin-top: 30px;
-    }
-</style>
+
 
 </html>
