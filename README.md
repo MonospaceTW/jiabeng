@@ -10,9 +10,9 @@ confirm.html=確認頁面
 order.html=菜單頁面（訂購頁面）
 result.html=訂購結果頁面（還沒做）
 
-v1.0 
+v1.0.0
 index.html按照視覺稿完成，GG確認過，表示滿意。
-confirm.html按照WireFrame刻。
+list.html按照wireframe刻。
 
 2018.01.10
 
@@ -25,3 +25,6 @@ v1.0.2
 營業時間排版
 
 2018.01.10
+
+v1.1.0
+confirm.html按照wireframe刻。

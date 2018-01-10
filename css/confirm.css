@@ -64,3 +64,14 @@ header {
 
 .container {
   width: 100%; }
+
+.container .store-wrap {
+  min-height: 50vh; }
+  .container .store-wrap img {
+    max-width: 80vw; }
+
+.container .button-wrap {
+  margin-top: 30px; }
+
+.container .button {
+  width: 234px; }
