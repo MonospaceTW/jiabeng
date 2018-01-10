@@ -16,3 +16,8 @@ confirm.html按照WireFrame刻。
 
 2018.01.10
 
+v1.01 
+拯救RWD，讓RWD能正常運作
+
+2018.01.10
+
