@@ -1,4 +1,6 @@
 js/
 css/bootstrap*
-prepros
-icon64
+prepros*
+icon64*
+storage.html
+favicon_64x64.svg
