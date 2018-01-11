@@ -1,6 +1,7 @@
 @import "global";
+@import "button";
 /* 沒有import “layout” */
-    
+
     /* for iPhone 6/7/8 */
 header{
     width: 100%;
@@ -33,8 +34,7 @@ header{
 }
 
 .container{
-    width: 100%;
-    
+    width: 100%;    
     /* for iPhone 6/7/8 */
     .logo-index{
         width: 234px;

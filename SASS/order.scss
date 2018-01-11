@@ -1,3 +1,25 @@
 @import "global";
 @import "layout";
+@import "button";
 
+.container{
+    .share-button{
+        border: 0 ;
+        background-color: #da706f;
+        
+        &:active{
+            color: #ffffff;
+        }
+    }
+    .dish-amount{
+        width:20vw;
+    }
+    ul{
+        width: 100%;
+    }
+    .send-button{
+        background-color: #da706f;
+        width: 234px;
+        height: 46px;
+    }
+}

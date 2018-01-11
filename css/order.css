@@ -64,3 +64,20 @@ header {
 
 .container {
   width: 100%; }
+
+.container .share-button {
+  border: 0;
+  background-color: #da706f; }
+  .container .share-button:active {
+    color: #ffffff; }
+
+.container .dish-amount {
+  width: 20vw; }
+
+.container ul {
+  width: 100%; }
+
+.container .send-button {
+  background-color: #da706f;
+  width: 234px;
+  height: 46px; }
