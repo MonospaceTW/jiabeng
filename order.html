@@ -15,7 +15,7 @@
                 <div><a href="list.html"><img class="site-logo p-2" src="img/logo-index.svg" alt="place logo.svg"></a></div>
                 
                 <!-- 選中的餐廳，請呼叫出餐廳名 -->
-                <h1 id="titleStore"class="p-2">
+                <h1 id="titleStore" class="p-2">
                     <span></span>
                 </h1>
     
@@ -30,7 +30,7 @@
     <div class="container d-flex flex-column">
 
         <!-- Share Button -->
-        <button id="shareBtn" type="submit" class="mt-2 share-button d-flex justify-content-center">
+        <button id="shareBtn" type="submit" class="my-2 share-button d-flex justify-content-center">
             <i class="fa fa-share" aria-hidden="true"></i>    
         </button>
 
@@ -43,10 +43,10 @@
         <!-- dish list -->
         <div class="d-flex justify-content-center">
             <ul id="dishList" class="d-flex flex-column">    
-                <li class="mt-2">
-                    <span class="mealName">${data.mealName}</span>
-                    <span >NT$${data.price}</span>
-                    <input class="dish-amount" type="text" data-key="${i.key}" data-name="${data.mealName}" data-price="${data.price}" placeholder="0">
+                <li class="mt-2 d-flex">
+                    <span class="mr-auto"></span>
+                    <span></span>
+                    <input class="dish-amount ml-1" type="text" data-key="${i.key}" data-name="${data.mealName}" data-price="${data.price}" placeholder="0">
                 </li>
             </ul>
         </div>
@@ -54,12 +54,12 @@
         <!-- member order -->
         <div class="d-flex justify-content-end">
             <ul id="membersOrder">
-                <span>數量：</span>
+                <span></span>
                 <li class="mt-2">
-                    <span >${data.orderName}</span> 已經訂購了 ${orderDataAry[i]}
+                    <span ></span> 
                 </li>
-                <span>總價：$120</span>
-                <span>訂購人：</span>
+                <span></span>
+                <span></span>
             </ul>
         </div>
 
@@ -68,11 +68,6 @@
             <button id="sendBtn" class="button send-button" type="submit">送出</button>
         </div>
     </div>
-
-
-
-
-
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script src="https://use.fontawesome.com/0b98b394ed.js"></script>
