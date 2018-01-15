@@ -34,7 +34,7 @@
             <i class="fa fa-share" aria-hidden="true"></i>    
         </button>
 
-        <!-- input order name -->
+        <!-- 訂購人名稱 -->
         <div class="order-name d-flex justify-content-around mt-2">
             <span>訂購人姓名</span>
             <input id="orderName" type="text" placeholder="John...">
@@ -51,22 +51,29 @@
             </ul>
         </div>
 
-        <!-- member order -->
+        <!-- 訂餐 button -->
+        <div class="d-flex justify-content-center">
+                <button id="sendBtn" class="button send-button" type="submit">點餐</button>
+            </div>
+        <!-- 個人 order -->
+
         <div class="d-flex justify-content-end">
             <ul id="membersOrder">
                 <span></span>
                 <li class="mt-2">
-                    <span ></span> 
+                    <span></span> 
                 </li>
                 <span></span>
                 <span></span>
             </ul>
         </div>
-
-        <!-- send button -->
+        
+        <!-- 結帳按鈕 -->
         <div class="d-flex justify-content-center">
-            <button id="sendBtn" class="button send-button" type="submit">送出</button>
+            <a class="button check-button" href="result.html">結帳</a>
         </div>
+
+        
     </div>
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
