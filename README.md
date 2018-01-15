@@ -14,22 +14,14 @@ v1.0.0
 index.html按照視覺稿完成，GG確認過，表示滿意。
 list.html按照wireframe刻。
 
-2018.01.10
-
 v1.0.1 
 拯救RWD，讓RWD能正常運作
-
-2018.01.10
 
 v1.0.2
 營業時間排版
 
-2018.01.10
-
 v1.1.0
 confirm.html按照wireframe刻。
-
-2018.01.10
 
 v1.1.1
 confirm.html內補上 <script>
@@ -39,6 +31,9 @@ confirm.html內補上 <script>
 v1.2.0
 result.html按照wireframe刻。
 金額那個選項再確認
+
+v1.2.1
+修改與bootstrap衝到的class name命名
 
 2018.01.15
 

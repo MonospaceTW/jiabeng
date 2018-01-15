@@ -65,36 +65,37 @@ header {
 .container {
   width: 100%; }
 
-.container .card-wrap {
-  width: 382px;
-  height: 342px;
+.container .order-card-wrap {
+  width: 80vw;
+  height: 350px;
   -webkit-perspective: 1000;
   perspective: 1000;
   margin: 0 auto 0; }
-  .container .card-wrap:hover .card {
+  .container .order-card-wrap:hover .order-card {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg); }
-  .container .card-wrap .card, .container .card-wrap .front, .container .card-wrap .back {
-    width: 382px;
+  .container .order-card-wrap .order-card, .container .order-card-wrap .front, .container .order-card-wrap .back {
+    width: 75vw;
     height: 342px; }
-  .container .card-wrap .card {
+  .container .order-card-wrap .order-card {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transition: all ease-in-out 2s;
     -o-transition: all ease-in-out 2s;
     transition: all ease-in-out 2s;
     position: relative;
-    display: block; }
-  .container .card-wrap .front, .container .card-wrap .back {
+    display: block;
+    margin: 0 auto 0; }
+  .container .order-card-wrap .front, .container .order-card-wrap .back {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0; }
-  .container .card-wrap .front {
+  .container .order-card-wrap .front {
     z-index: 2;
     background-color: aqua; }
-  .container .card-wrap .back {
+  .container .order-card-wrap .back {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     background-color: green; }

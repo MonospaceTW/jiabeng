@@ -3,25 +3,24 @@
 @import "button";
 
 .container{
-    .card-wrap{
-        width: 382px;
-        height: 342px;
+    .order-card-wrap{
+        width: 80vw;
+        height: 350px;
         perspective: 1000;
         margin: 0 auto 0;
-        &:hover .card{
+        &:hover .order-card{
             transform: rotateY(-180deg);
         }
-        .card, .front, .back{
-            width: 382px;
+        .order-card, .front, .back{
+            width: 75vw;
             height: 342px;
         }
-        .card{
+        .order-card{
             transform-style: preserve-3d;
             transition: all ease-in-out 2s;
             position: relative;
             display: block;
-           
-            
+            margin: 0 auto 0;
         }
         .front, .back{
             backface-visibility: hidden;
@@ -33,7 +32,7 @@
             z-index: 2;
             background-color: aqua;
         }
-        .back{
+        .back{         
             transform: rotateY(180deg);
             background-color: green;
         }
