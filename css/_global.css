@@ -1,0 +1,35 @@
+body {
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  color: #ffffff;
+  background-color: #D96F6F; }
+  body ul {
+    list-style-type: none;
+    padding-left: 0px; }
+    body ul li {
+      list-style-type: none; }
+  body .button {
+    border: solid #ffffff 1px;
+    margin-bottom: 25px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-box-shadow: 3px 3px 3px 1px #935452;
+    box-shadow: 3px 3px 3px 1px #935452;
+    background-color: #D96F6F; }
+
+a:link {
+  color: #ffffff; }
+
+a:visited {
+  color: #ffffff; }
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+a:active {
+  color: #da706f;
+  background-color: #ffffff; }

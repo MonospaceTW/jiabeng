@@ -18,7 +18,8 @@ body {
     border-radius: 12px;
     cursor: pointer;
     -webkit-box-shadow: 3px 3px 3px 1px #935452;
-    box-shadow: 3px 3px 3px 1px #935452; }
+    box-shadow: 3px 3px 3px 1px #935452;
+    background-color: #D96F6F; }
 
 a:link {
   color: #ffffff; }
